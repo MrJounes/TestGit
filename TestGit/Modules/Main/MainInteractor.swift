@@ -40,7 +40,9 @@ extension MainInteractor: MainBusinessLogic {
     
     func make(request: Main.Model.Request.RequestType) {
         switch request {
-        
+        case .some:
+            print("MainViewController")
+            presenter?.presentData(response: .some)
         }
     }
 }

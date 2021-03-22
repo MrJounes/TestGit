@@ -51,7 +51,8 @@ extension MainViewController: MainDisplayLogic {
     
     func display(viewModel: Main.Model.ViewModel.ViewModelType) {
         switch viewModel {
-        
+        case .some:
+            print("MainViewController")
         }
     }
 }
@@ -60,6 +61,7 @@ extension MainViewController: MainDisplayLogic {
 private extension MainViewController {
     
     func setupView() {
-        
+        print("----------")
+        interactor?.make(request: .some)
     }
 }

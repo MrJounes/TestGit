@@ -27,7 +27,9 @@ extension MainPresenter: MainPresentationLogic {
     
     func presentData(response: Main.Model.Response.ResponseType) {
         switch response {
-        
+        case .some:
+            print("MainViewController")
+            viewController?.display(viewModel: .some)
         }
     }
 }
