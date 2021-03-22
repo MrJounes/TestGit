@@ -18,6 +18,14 @@
 		D7ED5E6126092B1500D8A69E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ED5E5926092B1500D8A69E /* SplashViewController.swift */; };
 		D7ED5E6226092B1500D8A69E /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ED5E5A26092B1500D8A69E /* SplashInteractor.swift */; };
 		D7ED5E6326092B1500D8A69E /* SplashConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ED5E5B26092B1500D8A69E /* SplashConfigurator.swift */; };
+		D7ED5E72260930C800D8A69E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7ED5E6A260930C800D8A69E /* Main.storyboard */; };
+		D7ED5E73260930C800D8A69E /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ED5E6B260930C800D8A69E /* MainPresenter.swift */; };
+		D7ED5E74260930C800D8A69E /* MainWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ED5E6C260930C800D8A69E /* MainWorker.swift */; };
+		D7ED5E75260930C800D8A69E /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ED5E6D260930C800D8A69E /* MainRouter.swift */; };
+		D7ED5E76260930C800D8A69E /* MainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ED5E6E260930C800D8A69E /* MainModels.swift */; };
+		D7ED5E77260930C800D8A69E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ED5E6F260930C800D8A69E /* MainViewController.swift */; };
+		D7ED5E78260930C800D8A69E /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ED5E70260930C800D8A69E /* MainInteractor.swift */; };
+		D7ED5E79260930C800D8A69E /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ED5E71260930C800D8A69E /* MainConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +42,14 @@
 		D7ED5E5926092B1500D8A69E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		D7ED5E5A26092B1500D8A69E /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		D7ED5E5B26092B1500D8A69E /* SplashConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashConfigurator.swift; sourceTree = "<group>"; };
+		D7ED5E6A260930C800D8A69E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D7ED5E6B260930C800D8A69E /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		D7ED5E6C260930C800D8A69E /* MainWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWorker.swift; sourceTree = "<group>"; };
+		D7ED5E6D260930C800D8A69E /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		D7ED5E6E260930C800D8A69E /* MainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModels.swift; sourceTree = "<group>"; };
+		D7ED5E6F260930C800D8A69E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D7ED5E70260930C800D8A69E /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		D7ED5E71260930C800D8A69E /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				D7ED5E5326092B0200D8A69E /* Splash */,
+				D7ED5E69260930B000D8A69E /* Main */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -104,6 +121,21 @@
 				D7ED5E5B26092B1500D8A69E /* SplashConfigurator.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		D7ED5E69260930B000D8A69E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D7ED5E6A260930C800D8A69E /* Main.storyboard */,
+				D7ED5E6F260930C800D8A69E /* MainViewController.swift */,
+				D7ED5E70260930C800D8A69E /* MainInteractor.swift */,
+				D7ED5E6B260930C800D8A69E /* MainPresenter.swift */,
+				D7ED5E6C260930C800D8A69E /* MainWorker.swift */,
+				D7ED5E6D260930C800D8A69E /* MainRouter.swift */,
+				D7ED5E6E260930C800D8A69E /* MainModels.swift */,
+				D7ED5E71260930C800D8A69E /* MainConfigurator.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +198,7 @@
 				D7BD30BD260927D3004CB6CF /* LaunchScreen.storyboard in Resources */,
 				D7BD30BA260927D3004CB6CF /* Assets.xcassets in Resources */,
 				D7ED5E5C26092B1500D8A69E /* Splash.storyboard in Resources */,
+				D7ED5E72260930C800D8A69E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,13 +210,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7ED5E6026092B1500D8A69E /* SplashModels.swift in Sources */,
+				D7ED5E77260930C800D8A69E /* MainViewController.swift in Sources */,
 				D7ED5E5F26092B1500D8A69E /* SplashRouter.swift in Sources */,
 				D7BD30B1260927D1004CB6CF /* AppDelegate.swift in Sources */,
 				D7ED5E5E26092B1500D8A69E /* SplashWorker.swift in Sources */,
+				D7ED5E78260930C800D8A69E /* MainInteractor.swift in Sources */,
+				D7ED5E73260930C800D8A69E /* MainPresenter.swift in Sources */,
 				D7ED5E6126092B1500D8A69E /* SplashViewController.swift in Sources */,
 				D7ED5E5D26092B1500D8A69E /* SplashPresenter.swift in Sources */,
 				D7ED5E6326092B1500D8A69E /* SplashConfigurator.swift in Sources */,
+				D7ED5E76260930C800D8A69E /* MainModels.swift in Sources */,
+				D7ED5E74260930C800D8A69E /* MainWorker.swift in Sources */,
+				D7ED5E75260930C800D8A69E /* MainRouter.swift in Sources */,
 				D7ED5E6226092B1500D8A69E /* SplashInteractor.swift in Sources */,
+				D7ED5E79260930C800D8A69E /* MainConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
