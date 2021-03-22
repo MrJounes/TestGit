@@ -51,7 +51,8 @@ extension SplashViewController: SplashDisplayLogic {
     
     func display(viewModel: Splash.Model.ViewModel.ViewModelType) {
         switch viewModel {
-        
+        case .some:
+            print("SplashViewController")
         }
     }
 }
@@ -60,6 +61,6 @@ extension SplashViewController: SplashDisplayLogic {
 private extension SplashViewController {
     
     func setupView() {
-        
+        interactor?.make(request: .some)
     }
 }

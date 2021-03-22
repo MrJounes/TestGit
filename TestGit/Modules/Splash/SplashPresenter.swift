@@ -27,7 +27,9 @@ extension SplashPresenter: SplashPresentationLogic {
     
     func presentData(response: Splash.Model.Response.ResponseType) {
         switch response {
-        
+        case .some:
+            print("SplashInteractor")
+            viewController?.display(viewModel: .some)
         }
     }
 }

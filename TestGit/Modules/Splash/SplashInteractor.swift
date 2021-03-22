@@ -40,7 +40,9 @@ extension SplashInteractor: SplashBusinessLogic {
     
     func make(request: Splash.Model.Request.RequestType) {
         switch request {
-        
+        case .some:
+            print("SplashInteractor")
+            presenter?.presentData(response: .some)
         }
     }
 }
