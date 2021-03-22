@@ -1,5 +1,5 @@
 //
-//  SplashViewController.swift
+//  MainViewController.swift
 //  TestGit
 //
 //  Created by Игорь Дикань on 22.03.2021.
@@ -12,29 +12,29 @@
 
 import UIKit
 
-protocol SplashDisplayLogic: class {
-    func display(viewModel: Splash.Model.ViewModel.ViewModelType)
+protocol MainDisplayLogic: class {
+    func display(viewModel: Main.Model.ViewModel.ViewModelType)
 }
 
-final class SplashViewController: UIViewController {
+final class MainViewController: UIViewController {
     
     // MARK: - IBOutlets
     
     // MARK: - External vars
-    var interactor: SplashBusinessLogic?
-    var router: (NSObjectProtocol & SplashRoutingLogic & SplashDataPassing)?
+    var interactor: MainBusinessLogic?
+    var router: (NSObjectProtocol & MainRoutingLogic & MainDataPassing)?
     
     // MARK: - Internal vars
 
     // MARK: - Object lifecycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        SplashConfigurator.shared.configure(self)
+        MainConfigurator.shared.configure(self)
     }
   
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        SplashConfigurator.shared.configure(self)
+        MainConfigurator.shared.configure(self)
     }
   
     // MARK: - View lifecycle
@@ -47,23 +47,21 @@ final class SplashViewController: UIViewController {
 }
 
 // MARK: - Display logic
-extension SplashViewController: SplashDisplayLogic {
+extension MainViewController: MainDisplayLogic {
     
-    func display(viewModel: Splash.Model.ViewModel.ViewModelType) {
+    func display(viewModel: Main.Model.ViewModel.ViewModelType) {
         switch viewModel {
         case .some:
-            print("SplashViewController")
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                self.router?.routeToMain()
-            }
+            print("MainViewController")
         }
     }
 }
 
 // MARK: - Private methods
-private extension SplashViewController {
+private extension MainViewController {
     
     func setupView() {
+        print("----------")
         interactor?.make(request: .some)
     }
 }

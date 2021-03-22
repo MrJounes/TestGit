@@ -13,7 +13,7 @@
 import UIKit
 
 @objc protocol SplashRoutingLogic {
-    
+    func routeToMain()
 }
 
 protocol SplashDataPassing {
@@ -30,6 +30,13 @@ final class SplashRouter: NSObject {
 // MARK: - Routing logic
 extension SplashRouter: SplashRoutingLogic {
     
+    func routeToMain() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(identifier: "MainViewController") as? MainViewController else {
+            return
+        }
+        viewController?.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 // MARK: - Data passing
